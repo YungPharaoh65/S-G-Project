@@ -1,0 +1,58 @@
+.box{
+    width: 32rem;
+    height: 15rem;
+    margin-left: 2rem;
+    background-color: rgb(34, 32, 32);
+    border-radius: 2rem;
+}
+
+.circle{
+    width: 8rem;
+    height: 8rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    background-color: rgb(209, 115, 115);
+    border-radius: 2rem;
+}
+
+h2{
+    margin-left: 37rem;
+    margin-top: -9rem;
+    font-weight: 400;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+h3{
+    margin-left: 12rem;
+    margin-top: -9rem;font-weight: 400;
+    font-size: 2rem;
+}
+
+.boxtext{
+    margin-left: 12rem;
+    margin-top: -1rem;
+    color: grey;
+}
+
+.editprofile{
+    margin-left: 12rem;
+    margin-top: -.6rem;
+    font-weight: 300;
+}
+
+.editprofile:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.headermoved{
+    margin-top: 4rem;
+}
+
+h1{
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+  }

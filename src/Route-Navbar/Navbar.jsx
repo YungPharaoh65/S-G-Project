@@ -13,9 +13,10 @@ const Navbar = () => {
       <nav className={styles.navbar}>
         <Link to="/"><button className={styles['nav-button']}>Dashboard</button></Link>
         <Link to="/sales"><button className={styles['nav-button']}>Sales</button></Link>
-        <button className={styles['nav-button']}>Tracking List</button>
-        <button className={styles['nav-button']}>Profile</button>
-      </nav>
+
+         <Link to="/trackinglist"><button className={styles['nav-button']}>Trackinglist</button></Link>
+         <Link to="/profile"><button className={styles['nav-button']}>Profile</button></Link>
+        </nav>
     </div>
   );
 };

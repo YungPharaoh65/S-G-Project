@@ -1,8 +1,14 @@
 import React from 'react'
+import Navbar from './Navbar';
+
 
 export const Trackinglist = () => {
   return (
-    <div>Trackinglist</div>
+    <div>
+      <Navbar/>
+      <h1>Trackinglist</h1>
+      
+      </div>
   )
 }
 

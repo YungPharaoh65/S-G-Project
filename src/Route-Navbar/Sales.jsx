@@ -15,8 +15,8 @@ function Sales() {
     <header>
       <Navbar />
       <br />
-      <br />
-      <h1>Sales Activity for this week: </h1>
+      
+      <h1>Sales Activity : </h1>
       <div className={styles.box1}>
         <p className={styles.text1}>
           UnFurfilled Orders:{" "}
@@ -180,6 +180,8 @@ function Sales() {
       <br />
       <br />
       <br />
+
+      
 
       <Stock
         setTotalCost={setTotalCost}
