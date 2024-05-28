@@ -4,10 +4,12 @@ import Navbar from "./Route-Navbar/Navbar.jsx";
 import React, { useState } from "react";
 
 function App() {
-  return (
+
+ return (
     <div className="App">
       <Navbar />
       <Dashboard />
+      
     </div>
   );
 }

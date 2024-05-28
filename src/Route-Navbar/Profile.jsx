@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import MOCK_DATA from '../MOCK_DATA.json'; // Ensure this path is correct
+import { Model } from 'react-model';
 import styles from '../Route-Navbar/Profile.modules.css'; // Ensure this import is correct
 
 const Profile = () => {
@@ -36,7 +37,7 @@ const Profile = () => {
         <div className="circle"></div>
         <h3>Prince Msi.</h3>
         <p className='boxtext'>princemsimang27@gmail.com</p>
-        <p className='editprofile'>edit profile</p>
+       <p className='editprofile'>edit profile</p>
         <br /><br />
         <hr />
       </div>
