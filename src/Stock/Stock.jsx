@@ -7,9 +7,11 @@ function Stock({ setTotalCost, setUnfulfilledCount, setFulfilledCount, setTotalO
   const [searchQuery, setSearchQuery] = useState("");
   const [customerSearchQuery, setCustomerSearchQuery] = useState("");
   const [filteredData, setFilteredData] = useState(() => {
+
     // Retrieve filtered data from local storage, or use MOCK_DATA if it doesn't exist
     const storedData = localStorage.getItem("filteredData");
     return storedData ? JSON.parse(storedData) : [...MOCK_DATA];
+    
   });
 
   useEffect(() => {

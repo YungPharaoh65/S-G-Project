@@ -1,0 +1,111 @@
+.box {
+    width: 32rem;
+    height: 15rem;
+    margin-left: 2rem;
+    background-color: rgb(34, 32, 32);
+    border-radius: 2rem;
+  }
+  
+  .circle {
+    width: 8rem;
+    height: 8rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    background-color: rgb(209, 115, 115);
+    border-radius: 2rem;
+  }
+  
+  h2 {
+    margin-left: 37rem;
+    margin-top: -9rem;
+    font-weight: 400;
+    color: rgb(255, 247, 247);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h3 {
+    margin-left: 4rem;
+    margin-top: -9rem;
+    font-weight: 400;
+    font-size: 2rem;
+    color: whitesmoke;
+  }
+  
+  .boxtext {
+    margin-left: 4rem;
+    margin-top: -1rem;
+    color: #686767;
+  }
+  
+  .editprofile {
+    margin-left: 4rem;
+    margin-top: -0.6rem;
+    font-weight: 300;
+  }
+  
+  .editprofile:hover {
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .headermoved {
+    margin-top: 4rem;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+  }
+  
+  .inputer {
+    width: 15rem;
+    padding: 10px;
+    margin-top: -2.5rem; /* Adjusted to move higher */
+    margin-bottom: 1.5rem;
+    margin-left: 3rem; /* Adjusted to move higher */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline-color: pink;
+  }
+  
+  .movieinput {
+    margin-top: -6.5rem; /* Adjusted to move higher */
+    margin-bottom: -1.8rem;
+    margin-left: 8rem; /* Adjusted to move higher */
+  }
+  
+  .saveBtn {
+    margin-left: 15rem;
+    background-color: pink;
+    border: none;
+    border-radius: 1rem;
+    padding: 10px;
+    width: 5rem;
+    margin-top: -3rem;
+  }
+  
+  .saveBtn:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+  }
+
+  .profileImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+
+  .editprofile {
+  margin-left: 4rem;
+  margin-top: -0.6rem;
+  font-weight: 300;
+}
+
+.imageUpload {
+    margin-left: 2rem;
+    margin-top: -3rem;
+  }

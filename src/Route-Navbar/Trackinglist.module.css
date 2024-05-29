@@ -1,0 +1,82 @@
+/* Add this to your CSS file or in a <style> tag in your component */
+table {
+    width: 8rem; /* Reduce the width to make the table smaller */
+    max-width: 100rem; /* Set a max-width to prevent it from becoming too large */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: rgb(87, 74, 74);
+    border-radius: 1rem;
+  }
+  
+  thead tr {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  th,
+  td {
+    padding: 12px 15px;
+    color: white;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  tbody tr:last-of-type {
+    border-bottom: 2px solid #0f1816;
+  }
+  
+  
+  .graphbox {
+    width: 20rem;
+    height: 13rem;
+    margin-left: 5rem;
+    border-radius: 2rem;
+    background-color: whitesmoke;
+  }
+  
+  .graphtext {
+    margin-left: 2rem;
+    padding-top: 1rem;
+    border-radius: 2rem;
+  }
+  
+  .graphnumber {
+    margin-left: 2rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+  }
+  
+  .pieChartContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Adjust the width as needed */
+    max-width: 400px; /* Adjust the max-width as needed */
+  }
+  
+  /* Adjust the size and position of the pie chart */
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 50%;
+    margin-top: -25rem;
+    margin-left: 15rem;
+    border: none; /* Remove the white border */
+  }
+  
+  /* Set colors for pie chart segments */
+  /* Green for Fulfilled */
+  [data-label="Fulfilled"] {
+    background-color: rgb(72, 199, 55);
+  }
+  
+  /* Red for Unfulfilled */
+  [data-label="Unfulfilled"] {
+    background-color: rgb(216, 22, 22);
+  }
+  
