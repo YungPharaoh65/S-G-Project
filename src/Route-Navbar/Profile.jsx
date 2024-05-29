@@ -60,7 +60,7 @@ const Profile = () => {
   return (
     <div className={styles.profileContainer}>
       <Navbar />
-      <h1>Admin ID: {adminId}</h1>
+      <h1>Admin ID: #99999 {adminId}</h1>
 
       <div className={styles.box}>
         <br />
