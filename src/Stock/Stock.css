@@ -11,7 +11,7 @@
     background-color: rgb(87, 74, 74);
     font-weight: 900;
     border-radius: 1rem;
-    margin-top: -40rem;
+    margin-top: -35rem;
     overflow-y: transparent;
 }
 
@@ -112,7 +112,21 @@ input{
     outline-color: green;
 }
 
+.deleteBtn{
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 1rem;
+    width: 4rem;
+    font-weight: 800;
+    height: 2rem;
 
+}
+
+.deleteBtn:hover{
+    color: black;
+    background-color: #8d5252;
+}
 
 
 

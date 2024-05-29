@@ -16,7 +16,7 @@ function Sales() {
       <Navbar />
       <br />
       
-      <h1>Sales Activity : </h1>
+      <h1>Sales Activity For: </h1>
       <div className={styles.box1}>
         <p className={styles.text1}>
           UnFurfilled Orders:{" "}
@@ -137,7 +137,8 @@ function Sales() {
       <div className={styles.move222}>
         <div className={styles.box71}>
           {" "}
-          <h3>Purchase order</h3>
+          <br /><br />
+          
           <p className={styles.topic2}>Received Orders</p>
           <p className={styles.topic2}>Total cost (USD)</p>
           <div className={styles.number2}>
@@ -145,7 +146,7 @@ function Sales() {
             <p className={styles.totalCost}>${totalCost.toFixed(2)}</p>{" "}
             {/* how do i connect this on Header component to the total added amount from order.total on the Stock component on jsx*/}
           </div>
-          <h3>Incoming purchase orders</h3>
+          
           {/* This is grouuped by the way*/}
           <p className={styles.topic3}> 🟧 - # 51- Henrik </p>
           <p className={styles.topic33}> Ernest Garbon </p>

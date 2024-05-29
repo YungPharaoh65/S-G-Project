@@ -2,12 +2,15 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import MOCK_DATA from '../MOCK_DATA.json'; // Ensure this path is correct
-import { Model } from 'react-model';
 import styles from '../Route-Navbar/Profile.modules.css'; // Ensure this import is correct
 
 const Profile = () => {
 
-  const [totalCost, setTotalCost] = useState(0);
+  const [totalCost, setTotalCost] = useState(() => {
+    // Retrieve total cost from local storage, or use 0 if it doesn't exist
+    const storedTotalCost = localStorage.getItem("totalCost");
+    return storedTotalCost ? parseFloat(storedTotalCost) : 0;
+  });
   const [fulfilledOrders, setFulfilledOrders] = useState(0);
   const [unfulfilledOrders, setUnfulfilledOrders] = useState(0);
 
@@ -18,6 +21,7 @@ const Profile = () => {
       return acc + amount;
     }, 0);
     setTotalCost(total);
+    localStorage.setItem("totalCost", total.toString()); // Store total cost in local storage
 
     // Calculate the number of fulfilled and unfulfilled orders
     const fulfilledCount = MOCK_DATA.filter(order => order["Fulfillment state"] === true).length;
