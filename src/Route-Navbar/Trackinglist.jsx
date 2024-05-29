@@ -4,9 +4,11 @@ import styles from "./Trackinglist.module.css"; // Using CSS modules
 import MOCK_DATA from "../MOCK_DATA.json"; // Adjust the path as necessary
 
 import { Pie } from "react-chartjs-2"; // Added this so the react pie chart works: npm install react-chartjs-2 chart.js
-
 import { Chart, ArcElement } from "chart.js";
-Chart.register(ArcElement);
+import ChartDataLabels from 'chartjs-plugin-datalabels'; // npm install chartjs-plugin-datalabels : displays the charts data into it
+
+
+Chart.register(ArcElement, ChartDataLabels);
 
 export const Trackinglist = () => {
   const initialData = MOCK_DATA.map((order) => ({
@@ -19,7 +21,7 @@ export const Trackinglist = () => {
   const [data, setData] = useState(initialData);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const timer = setInterval(() => {
       // Simulate updating data every 5 seconds
       // Here you can fetch new data from an API
       // For demonstration, I'm just updating the status randomly
@@ -35,7 +37,7 @@ export const Trackinglist = () => {
       setData(updatedData);
     }, 5000);
 
-    return () => clearTimeout(timer);
+    return () => clearInterval(timer);
   }, [data]);
 
   const statusCounts = data.reduce(
@@ -47,7 +49,7 @@ export const Trackinglist = () => {
       }
       return acc;
     },
-    { "fulfilled": 0, "unfulfilled": 0 }
+    { fulfilled: 0, unfulfilled: 0 }
   );
 
   const totalCount = Object.values(statusCounts).reduce(
@@ -60,7 +62,7 @@ export const Trackinglist = () => {
     datasets: [
       {
         label: "Order Status",
-        data: Object.values(statusCounts),
+        data: [statusCounts.fulfilled, statusCounts.unfulfilled],
         backgroundColor: [
           "rgb(75, 192, 192)", // Green for Fulfilled
           "rgb(255, 99, 132)", // Red for Unfulfilled
@@ -69,23 +71,40 @@ export const Trackinglist = () => {
     ],
   };
 
+  const pieOptions = {
+    plugins: {
+      datalabels: {
+        formatter: (value, context) => {
+          const dataset = context.chart.data.datasets[0];
+          const total = dataset.data.reduce((acc, val) => acc + val, 0);
+          const percentage = ((value / total) * 100).toFixed(1) + "%";
+          return percentage;
+        },
+        color: '#fff',
+        font: {
+          size: '16',
+        }
+      }
+    }
+  };
+
   return (
     <div>
       <Navbar />
       <h1>Trackinglist</h1>
-      <br />
-
-      <div className={styles.graphbox}>
-        <p className={styles.graphtext}>Total Sales</p>
-        <p className={styles.graphnumber}>R 205 453</p>
-        <p className={styles.graphtext}>over last week</p>
+      <div className={styles.container}>
+        <div className={styles.graphbox}>
+          <p className={styles.graphtext}>Total Sales</p>
+          <p className={styles.graphnumber}>R 205 453</p>
+          <p className={styles.graphtext}>over last week</p>
+        </div>
+      
       </div>
       <br />
-
       <div className={styles.pieChartContainer}>
-        <Pie data={pieData} />
+        <Pie data={pieData} options={pieOptions} />
       </div>
-      <br />
+
     </div>
   );
 };
