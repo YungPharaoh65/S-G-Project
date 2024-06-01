@@ -81,6 +81,7 @@
     margin-left: 1.5rem;
     padding-top: 1rem;
     font-size: 1.5rem;
+    user-select: none; /* Standard to make text not to be copied */
     
   }
 
@@ -128,6 +129,11 @@
     margin-left: 55rem;
     margin-top: -2.5rem;
     
+  }
+
+  .tag{
+    margin-left: 38rem;
+    font-size: .8rem;
   }
 
 

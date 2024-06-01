@@ -60,10 +60,12 @@ const Dashboard = () => {
       </div>
 
       <div className={styles.graphbox46}>
-        <p className={styles.graphtext}>Total Sales</p>
+        <p className={styles.graphtext}>Transportation</p>
         <p className={styles.graphnumber}>R 205 453</p>
         <p className={styles.graphtext}>over last week</p>
       </div>
+
+<br />
 
     </div>
   )
