@@ -11,7 +11,7 @@
     width: 20rem;
     height: 17rem;
     margin-left: 21rem;
-    margin-top: -18rem;
+    margin-top: -18.8rem;
     border-radius: 2rem;
     background-color: whitesmoke;
   }
@@ -20,7 +20,7 @@
     width: 14rem;
     height: 17rem;
     margin-left: 42rem;
-    margin-top: -18rem;
+    margin-top: -18.9rem;
     border-radius: 2rem;
     background-color: whitesmoke;
   }
@@ -29,7 +29,7 @@
     width: 25rem;
     height: 17rem;
     margin-left: 57rem;
-    margin-top: -18rem;
+    margin-top: -18.9rem;
     border-radius: 2rem;
     background-color: whitesmoke;
   }
@@ -56,7 +56,7 @@
     width: 28rem;
     height: 17rem;
     margin-left:25rem;
-    margin-top: -18rem;
+    margin-top: -18.7rem;
     border-radius: 2rem;
     background-color: whitesmoke;
   }
@@ -65,10 +65,72 @@
     width: 28rem;
     height: 17rem;
     margin-left:54rem;
-    margin-top: -18rem;
+    margin-top: -18.8rem;
     border-radius: 2rem;
     background-color: whitesmoke;
   }
+
+  .graphtext{
+    margin-left: 1.5rem;
+    padding-top: 1rem;
+    font-weight: 500;
+    font-size: 29px;
+  }
+
+  .graphnumber{
+    margin-left: 1.5rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    
+  }
+
+  .graphheader{
+    margin-left: 1.5rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .date{
+    margin-left: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  
+
+  .pendingshipments{
+    margin-left: 1rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: .5rem;
+  }
+
+  .downloadingreports{
+    margin-left: 1rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: .5rem;
+  }
+
+  .createshipment{
+    margin-left: 1rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: .5rem;
+  }
+
+
+  .movebtn{
+    margin-left: 55rem;
+    margin-top: -2.5rem;
+    
+  }
+
+
 
 
 
