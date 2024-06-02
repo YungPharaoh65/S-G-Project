@@ -1,6 +1,6 @@
 import React from "react"; 
 
-{/* This is the edit Profile that needs to be Popping Up */}{/* This is the edit Profile that needs to be Popping Up */}
+{/* This is the edit Profile that needs to be Popping Up */}{/* This is the edit Profile that needs to be Popping Up */ }
 {/* This is the edit Profile that needs to be Popping Up */}{/* This is the edit Profile that needs to be Popping Up */}
 {/* This is the edit Profile that needs to be Popping Up */}{/* This is the edit Profile that needs to be Popping Up */}
 
