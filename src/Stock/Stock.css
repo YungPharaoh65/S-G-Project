@@ -128,6 +128,12 @@ input{
     background-color: #8d5252;
 }
 
+.dragging {
+    border: 2px dashed #007bff;
+    background-color: #f1f1f1;
+  }
+  
+
 
 
 
