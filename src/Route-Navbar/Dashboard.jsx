@@ -2,6 +2,21 @@ import React from 'react'
 import Navbar from './Navbar';
 import styles from './Dashboard.module.css'
 
+// date fuctionality:
+export const formatDate = () => {
+  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const monthsOfYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+  const now = new Date();
+  const day = daysOfWeek[now.getDay()];
+  const date = now.getDate();
+  const month = monthsOfYear[now.getMonth()];
+  const year = now.getFullYear();
+
+  return `${day}, ${date} ${month} ${year}`;
+};
+
+
 const Dashboard = () => {
   return (
     <div>
@@ -35,8 +50,8 @@ const Dashboard = () => {
 <br /><br />
 
       <div className={styles.vertbox}>
-        <div className={styles.graphheader}>Order list Database</div> <div className={styles.date}>Tuesday, 14 May 2024</div>
-        
+      <div className={styles.graphheader}>Order list Database</div>
+      <div className={styles.date}>{formatDate()}</div> 
         <div className={styles.movebtn}>
         <button className={styles.pendingshipments}>Pending Shipment</button>
 
