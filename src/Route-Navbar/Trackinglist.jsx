@@ -34,6 +34,7 @@ export const Trackinglist = () => {
             ? "cancelled"
             : "paid fully",
       }));
+      
       setData(updatedData);
     }, 5000);
 
